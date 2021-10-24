@@ -2,8 +2,9 @@
   <div>
     <Header/>
 
-    <ContactForm/>
+    <Stack/>
 
+    <!-- <Hero/> -->
   </div>  
 </template>
 

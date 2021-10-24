@@ -1,11 +1,11 @@
 <template>
-        <footer>
+        <footer class="">
             <div>
             <h2 class="text-center text-2xl">Web Developer and Defi expert</h2>
-            <div class="options flex justify-center">
-                <a href="src/pages/work.html"><h3>My WORK</h3></a>
-                <a href="src/pages/about.html"><h3>About ME</h3></a>
-                <a href="src/pages/stack.html"><h3>STACK</h3></a>
+            <div class="options flex justify-center">                
+                <NuxtLink class="text-base" to="/work"><h3 class="font-semibold">My Work</h3></NuxtLink>
+                <NuxtLink class="text-base" to="/about"><h3 class="font-semibold">About Me</h3></NuxtLink>
+                <NuxtLink class="text-base" to="/stack"><h3 class="font-semibold">STACK</h3></NuxtLink>
             </div>
 
             <ul class="social-logo justify-center">
@@ -36,7 +36,7 @@ h3 {
 footer {
     position: fixed;
     bottom: 0;
-    position: fixed;
+    /*position: fixed; */
     left: 50%;
     transform: translate(-50%, 0);
     display: flex;

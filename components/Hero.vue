@@ -33,7 +33,7 @@
         margin: 0;
     }
     .hero-section {
-        margin-top: 15vh;
+        margin-top: 13vh;
         text-align: center;
     }
     @media only screen and (max-width: 600px) {

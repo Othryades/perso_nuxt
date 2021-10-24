@@ -2,8 +2,9 @@
   <div>
     <Header/>
 
-    <ContactForm/>
+    <AboutMe/>
 
+    <!-- <Hero/> -->
   </div>  
 </template>
 
