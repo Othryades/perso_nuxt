@@ -2,7 +2,7 @@
         <section>
         <div class="form-submit">
             <h2 class="subtitle">Contact me for any inquiry</h2>
-            <form  target="_blank" action="https://formsubmit.co/morismooshot@gmail.com" method="POST">
+            <form  target="_blank" action="https://formsubmit.co/df1678e898c7849cbf7b26ec79b33fac" method="POST">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="https://moris-dev.surge.sh/thankyou">
                 <div class="form-row">
