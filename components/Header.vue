@@ -1,8 +1,8 @@
 <template>
     <header class="py-5">
         <ul>
-            <li><NuxtLink class="text-base" to="/">Home</NuxtLink></li>
-            <li><NuxtLink class="text-base" to="/contact">Contact me</NuxtLink></li>          
+            <li><NuxtLink class="text-base" to="/" title="home">Home</NuxtLink></li>
+            <li><NuxtLink class="text-base" to="/contact" title="contact">Contact me</NuxtLink></li>          
         </ul>
     </header>
 </template>

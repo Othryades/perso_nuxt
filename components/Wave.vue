@@ -1,6 +1,7 @@
 <template>
     <svg version="1.1" class="wave"
          xlmns="http://www.w3.org/200/svg">
+         
         <path
                 d="
                 M0 67

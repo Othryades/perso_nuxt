@@ -3,15 +3,15 @@
             <div>
             <h2 class="text-center text-2xl">Web Developer and Defi</h2>
             <div class="options flex justify-center">                
-                <NuxtLink class="text-base" to="/work"><h3 class="font-semibold">My Work</h3></NuxtLink>
-                <NuxtLink class="text-base" to="/about"><h3 class="font-semibold">About Me</h3></NuxtLink>
-                <NuxtLink class="text-base" to="/stack"><h3 class="font-semibold">STACK</h3></NuxtLink>
+                <NuxtLink class="text-base" to="/work" title="my work"><h3 class="font-semibold">My Work</h3></NuxtLink>
+                <NuxtLink class="text-base" to="/about" title="about me"><h3 class="font-semibold">About Me</h3></NuxtLink>
+                <NuxtLink class="text-base" to="/stack" title="my stack"><h3 class="font-semibold">STACK</h3></NuxtLink>
             </div>
 
             <ul class="social-logo justify-center">
-                <a href="" target="_blank">
+                <!-- <a href="" target="_blank">
                     <li>Twitter</li>
-                </a>
+                </a> -->
                 <a href="https://github.com/Othryades" target="_blank">
                     <li>GitHub</li>
                 </a>
