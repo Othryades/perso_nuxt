@@ -1,6 +1,6 @@
 <template>
-    <section class="hero-section">
-        <h1>Moris <span class="light-text">web</span> Dev</h1>
+    <section class="hero-section bg-black-custom">
+        <h1 class="">Moris <span class="light-text">web</span> Dev</h1>
         <div class="socials">
             <!-- <div class="social">
                 <a href="" target="_blank">
@@ -36,6 +36,7 @@
         font-size: 160px;
         font-weight: 700;
         margin: 0;
+        color: white;
     }
     .hero-section {
         margin-top: 13vh;

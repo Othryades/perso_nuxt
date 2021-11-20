@@ -1,5 +1,5 @@
 <template>
-<section>
+<section class="text-white">
     <h2 class="subtitle">stack</h2>
     <br/>
     <h2>HTML</h2>

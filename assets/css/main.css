@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;700&display=swap');
 
-body {
+html[data-theme='light'] {
+    filter: invert(1) hue-rotate(180deg);
+}
+html[data-theme='light'] img{
+    filter: invert(1) hue-rotate(180deg);
+}
+.light-mode{
+    filter: invert(1) hue-rotate(180deg);
+}
+.bg-black-custom{
     background-color: rgb(20,20,20);
-    color: rgb(255,255,255);
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
+}
+body{
+    background-color: rgb(20,20,20);
 }
 
 header {
@@ -62,10 +71,10 @@ section {
 
 a {
     text-decoration: none;
-    color: rgb(255,255,255);
+    /* color: rgb(255,255,255); */
 }
 
-.socials {
+/* .socials {
     width: 100px;
     height: 320px;
     background-color: rgb(255,0,166);
@@ -79,7 +88,7 @@ a {
 .socials {
     display: none;
 }
-}
+} */
 
 .social {
     width: 100%;
@@ -100,9 +109,11 @@ a {
 }
 
 a:hover {
-    color: rgb(255,0,166);
+    color:  rgb(84 205 47);
 }
-
+footer h3:hover{
+    color: rgb(30 102 8);
+}
 /*work page*/
 
 .work-details {

@@ -1,4 +1,6 @@
 <template>
+        <div class="py-5 bg-black-custom">
+
     <svg version="1.1" class="wave"
          xlmns="http://www.w3.org/200/svg">
          
@@ -61,6 +63,7 @@
             </animate>
         </path>
     </svg>
+    </div>
 </template>
 
 <style>

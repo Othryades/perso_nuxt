@@ -1,22 +1,22 @@
 <template>
         <footer class="">
             <div>
-            <h2 class="text-center text-2xl">Web Developer and Defi</h2>
+            <h2 class="text-center text-2xl text-white">Web Developer and Defi</h2>
             <div class="options flex justify-center">                
-                <NuxtLink class="text-base" to="/work" title="my work"><h3 class="font-semibold">My Work</h3></NuxtLink>
-                <NuxtLink class="text-base" to="/about" title="about me"><h3 class="font-semibold">About Me</h3></NuxtLink>
-                <NuxtLink class="text-base" to="/stack" title="my stack"><h3 class="font-semibold">STACK</h3></NuxtLink>
-            </div>
+                <NuxtLink class="text-base" to="/work" title="my work"><h3 class="font-semibold text-center text-white">My Work</h3></NuxtLink>
+                <NuxtLink class="text-base" to="/about" title="about me"><h3 class="font-semibold text-center text-white">About Me</h3></NuxtLink>
+                <NuxtLink class="text-base font-semibold text-center text-white" to="/stack" title="my stack"><h3 class="font-semibold text-center text-white">STACK</h3></NuxtLink>
+            </div> 
 
             <ul class="social-logo justify-center">
-                <!-- <a href="" target="_blank">
-                    <li>Twitter</li>
-                </a> -->
+                <a href="https://www.facebook.com/moris.iarossi/" title="my facebook" target="_blank">
+                    <li class="text-white">Facebook</li>
+                </a>
                 <a href="https://github.com/Othryades" target="_blank">
-                    <li>GitHub</li>
+                    <li class="text-white">GitHub</li>
                 </a>
                 <a href="https://www.linkedin.com/in/moris-iarossi/" target="_blank">
-                    <li>LinkedIn</li>
+                    <li class="text-white">LinkedIn</li>
                 </a>
             </ul>
             </div>
@@ -59,13 +59,13 @@ footer ul {
 
 a {
     text-decoration: none;
-    color: rgb(255,255,255);
+    /* color: rgb(255,255,255); */
 }
 
 .socials {
     width: 100px;
     height: 320px;
-    background-color: rgb(43, 138, 14);
+    background-color: rgb(30 102 8);
     border-radius: 30px 0 0 30px;
     position: fixed;
     right: 0;
@@ -97,13 +97,11 @@ a {
     fill: rgb(255,255,255);
 }
 
-a:hover {
-    color: rgb(43, 138, 14); 
-}
-.social-logo a:hover {
-    color: rgb(43, 138, 14);
+footer a:hover {
+    color: rgb(30 102 8);
     transform: scale(1.2);
 }
+
     @media only screen and (max-width: 600px) {
        h2 {
             font-size: 18px !important;

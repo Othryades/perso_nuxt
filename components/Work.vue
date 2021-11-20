@@ -1,7 +1,7 @@
 <template>
   <section>
-    <h2 class="subtitle">work</h2>
-    <table class="work-details">
+    <h2 class="subtitle text-white">work</h2>
+    <table class="work-details text-white">
       <tr>
         <td>2019 - Present</td>
         <td>
