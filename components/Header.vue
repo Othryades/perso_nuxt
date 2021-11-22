@@ -143,11 +143,11 @@ export default {
 
     if (theme === "dark") {
       // changeThemeToLight()
-      checkbox.removeAttribute("checked");
+      checkbox.setAttribute("checked", "checked");
       // img.classList.remove("light-mode");
     } else {
-      // changeThemeToDark()
-      checkbox.setAttribute("checked", "checked");
+      checkbox.removeAttribute("checked");
+      // changeThemeToDark()      
       // img.classList.add("light-mode");
     }
 
