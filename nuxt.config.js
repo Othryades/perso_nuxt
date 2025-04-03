@@ -3,7 +3,9 @@ export default {
   target: 'static',
   ssr: true,
   generate: {
-    fallback: true
+    fallback: true,
+    routes: ['/'],
+    interval: 100
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -49,6 +51,15 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    extractCSS: true,
+    optimization: {
+      splitChunks: {
+        chunks: 'all',
+        automaticNameDelimiter: '.',
+        name: true,
+        maxSize: 244000
+      }
+    }
   },
 
   // Page transition
