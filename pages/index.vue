@@ -23,12 +23,12 @@ export default {
         content: 'Home page description'
       }
     ],
-          link: [
-        {
-          rel: 'canonical',
-          href: 'https://moris-dev.surge.sh/'
-        }
-      ]
+    link: [
+      {
+        rel: 'canonical',
+        href: 'https://moriswebdev-portofolio.netlify.app/'
+      }
+    ]
   }
 }
 </script>
