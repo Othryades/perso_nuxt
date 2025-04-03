@@ -3,7 +3,7 @@
     <Header/>
 
     <Work/>
-
+    <Footer2/>
     <!-- <Hero/> -->
   </div>  
 </template>

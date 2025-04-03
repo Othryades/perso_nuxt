@@ -219,6 +219,47 @@ footer h3:hover {
     }
 }
 
+/* Page layout fixes */
+.page-container {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure basic structure of all pages */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Force footer to bottom for all pages */
+.footer-custom {
+    width: 100%;
+    margin-top: auto !important;
+    position: relative !important;
+    bottom: 0 !important;
+    padding: 2rem 0 !important;
+}
+
+body > div {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 

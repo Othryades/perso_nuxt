@@ -1,13 +1,6 @@
 <template>
-    <footer class="footer-n">
+    <footer class="footer-custom">
         <div>
-            <h2 class="text-center text-2xl text-white">Web Developer and Defi</h2>
-            <div class="options flex justify-center">                
-                <NuxtLink class="nav-link" to="/work" title="my work"><h3 class="font-semibold text-center">My Work</h3></NuxtLink>
-                <NuxtLink class="nav-link" to="/about" title="about me"><h3 class="font-semibold text-center">About Me</h3></NuxtLink>
-                <NuxtLink class="nav-link" to="/stack" title="my stack"><h3 class="font-semibold text-center">STACK</h3></NuxtLink>
-            </div> 
-
             <ul class="social-links">
                 <li>
                     <a href="https://www.facebook.com/moris.iarossi/" title="Facebook" target="_blank" class="social-link">
@@ -35,31 +28,21 @@
     </footer>
 </template>
 
-<style>
-h2 {
-    margin: 3px;
-    font-weight: 500;
-    text-align: center;
-    color: var(--color-text);
-}
-
-h3 {
-    margin: 0;
-    font-weight: 500;
-    color: var(--color-text);
-}
-
-.footer-n {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+<style scoped>
+/* Component-specific styles */
+.footer-custom {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    z-index: 10;
     padding: 2rem 0;
+    z-index: 10;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-bg);
 }
 
 .social-links {
@@ -68,6 +51,7 @@ h3 {
     gap: 2rem;
     padding: 1.5rem 0;
     list-style: none;
+    margin: 0;
 }
 
 .options {
@@ -126,10 +110,6 @@ h3 {
 }
 
 @media only screen and (max-width: 600px) {
-    h2 {
-        font-size: 18px !important;
-    }
-    
     .options {
         gap: 1rem;
     }

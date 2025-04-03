@@ -3,7 +3,7 @@
     <Header/>
 
     <ContactForm/>
-
+    <Footer2/>
   </div>  
 </template>
 

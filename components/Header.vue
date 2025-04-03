@@ -100,6 +100,23 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+/* Header animation */
+.animate-header {
+  opacity: 0;
+  animation: fadeInDown 0.8s ease forwards;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .nav-link {
     font-size: 1rem;
@@ -116,7 +133,7 @@ input:checked + .slider:before {
 </style>
 
 <template>
-  <header class="bg-black-custom">
+  <header class="bg-black-custom animate-header">
     <ul>
       <li><NuxtLink class="nav-link" to="/" title="home">Home</NuxtLink></li>
       <li class="whitespace-nowrap">

@@ -3,7 +3,7 @@
     <Header/>
 
     <Stack/>
-
+    <Footer2/>
     <!-- <Hero/> -->
   </div>  
 </template>

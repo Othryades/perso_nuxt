@@ -1,7 +1,7 @@
 <template>
         <div class="py-5 bg-black-custom">
 
-    <svg version="1.1" class="wave"
+    <svg version="1.1" class="wave animate-wave"
          xlmns="http://www.w3.org/200/svg">
          
         <path
@@ -74,6 +74,20 @@
     position: fixed;
     bottom: 0;
     left: 0;
+}
+
+.animate-wave {
+    opacity: 0;
+    animation: fadeInWave 2s ease 1.5s forwards;
+}
+
+@keyframes fadeInWave {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .social svg {

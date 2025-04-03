@@ -5,6 +5,7 @@
     <ThankYou/>
 
     <!-- <Hero/> -->
+    <Footer2/>
   </div>  
 </template>
 
