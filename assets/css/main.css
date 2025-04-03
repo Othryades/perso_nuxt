@@ -37,17 +37,23 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 header ul {
     display: flex;
-    padding: 10px 10px 50px 10px;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 li {
     list-style: none;
-    margin: 5px 10px;
 }
 
 h1 {
@@ -162,6 +168,18 @@ footer h3:hover {
     .work-details td {
         padding: 5px;
     }
+
+    header {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 100px;
+    }
+    
+    .subtitle {
+        font-size: 30px;
+    }
 }
 
 /*about me*/
@@ -184,8 +202,10 @@ footer h3:hover {
     position: fixed;
 }
 
-
 @media only screen and (max-width: 600px) {
+    header ul {
+        gap: 1rem;
+    }
     .sub-pages-footer {
         position: relative;
     }

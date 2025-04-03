@@ -5,8 +5,7 @@ export default {
   generate: {
     fallback: '404.html',
     routes: ['/'],
-    interval: 100,
-    subFolders: false
+    interval: 100
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head

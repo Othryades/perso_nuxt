@@ -1,34 +1,6 @@
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;700&display=swap");
 
-body {
-  /* background-color: rgb(20,20,20); */
-  /* color: rgb(255,255,255); */
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 300;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-header ul {
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
 .nav-link {
   color: var(--color-text);
   text-decoration: none;
@@ -129,10 +101,6 @@ input:checked + .slider:before {
 }
 
 @media only screen and (max-width: 600px) {
-  header {
-    padding: 1rem;
-  }
-  
   .nav-link {
     font-size: 1rem;
   }
