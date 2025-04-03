@@ -68,7 +68,7 @@
 
 <style>
 .wave {
-    fill: rgb(0,0,0);
+    fill: #0096881a;
     width: 100vw;
     height: 55vh;
     position: fixed;
