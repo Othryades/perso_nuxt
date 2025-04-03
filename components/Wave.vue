@@ -70,7 +70,7 @@
 .wave {
     fill: rgb(0,0,0);
     width: 100vw;
-    height: 60vh;
+    height: 55vh;
     position: fixed;
     bottom: 0;
     left: 0;

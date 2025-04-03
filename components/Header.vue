@@ -10,25 +10,78 @@ body {
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
+
 header ul {
   display: flex;
-  padding: 10px 10px 50px 10px;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
+
 li {
   list-style: none;
-  margin: 5px 10px;
 }
+
+.nav-link {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-accent);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-surface);
+  border-radius: 2rem;
+}
+
+.theme-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 48px;
+  height: 24px;
 }
 
 .switch input {
-    opacity: 0;
+  opacity: 0;
   width: 0;
   height: 0;
 }
@@ -40,76 +93,76 @@ li {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
+  background-color: var(--color-text-secondary);
   transition: 0.4s;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: 0.4s;
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: var(--color-bg);
   transition: 0.4s;
-  transition: transform 0.3s linear;
 }
 
 input:checked + .slider {
-  background-color: rgb(43, 138, 14);
-  transition: transform 0.3s linear;
+  background-color: var(--color-accent);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px rgb(43, 138, 14);
-  transition: transform 0.3s linear;
+  box-shadow: 0 0 1px var(--color-accent);
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-  transition: transform 0.3s linear;
+  transform: translateX(24px);
 }
 
-/* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+  border-radius: 24px;
 }
 
 .slider.round:before {
   border-radius: 50%;
 }
+
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 1rem;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+  }
+  
+  .theme-toggle {
+    padding: 0.4rem 0.75rem;
+  }
+  
+  .theme-label {
+    font-size: 0.75rem;
+  }
+}
 </style>
 
 <template>
-  <header class="py-5 bg-black-custom">
+  <header class="bg-black-custom">
     <ul>
-      <li><NuxtLink class="text-white" to="/" title="home">Home</NuxtLink></li>
-      <li class="whitespace-nowrap	">
-        <NuxtLink id="zzz" class="text-white" to="/contact" title="contact"
-          >Contact me</NuxtLink
-        >
+      <li><NuxtLink class="nav-link" to="/" title="home">Home</NuxtLink></li>
+      <li class="whitespace-nowrap">
+        <NuxtLink class="nav-link" to="/contact" title="contact">Contact me</NuxtLink>
       </li>
     </ul>
-    <div class="d-block w-6/12">
-    <div class="pt-3">
-      <div class="flex justify-end items-center space-x-2 mx-auto relative">
-        <span class="text-xs text-white">Light </span>
-        <div>
-          <label class="switch">
-            <input v-on:click="switcha" type="checkbox" id="checkbox" checked />
-            <span class="slider round"></span>
-          </label>
-        </div>
-        <span class="text-xs font-semibold text-white">Dark</span>
-      </div>
+    <div class="theme-toggle">
+      <span class="theme-label">Light</span>
+      <label class="switch">
+        <input v-on:click="switcha" type="checkbox" id="checkbox" checked />
+        <span class="slider round"></span>
+      </label>
+      <span class="theme-label">Dark</span>
     </div>
-    </div>
-
   </header>
 </template>
 

@@ -12,6 +12,11 @@
     <h2>Database Management</h2>
     <h2>SQL</h2>
     <h2>PHP</h2>
+    <h2>AWS</h2>
+    <h2>Docker</h2>
+    <h2>CI/CD</h2>
+    <h2>Git</h2>
+    
 </section>
 </template>
 

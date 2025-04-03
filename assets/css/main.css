@@ -1,24 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  --color-bg: #0a0a0a;
+  --color-text: #ffffff;
+  --color-text-secondary: #a0a0a0;
+  --color-accent: #00ff9d;
+  --color-accent-hover: #00cc7d;
+  --color-surface: #1a1a1a;
+}
 
 html[data-theme='light'] {
     filter: invert(1) hue-rotate(180deg);
 }
-html[data-theme='light'] img{
+
+html[data-theme='light'] img {
     filter: invert(1) hue-rotate(180deg);
 }
-.light-mode{
+
+.light-mode {
     filter: invert(1) hue-rotate(180deg);
 }
-.bg-black-custom{
-    background-color: rgb(20,20,20);
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Inter', sans-serif;
 }
-body{
-    background-color: rgb(20,20,20);
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.bg-black-custom {
+    background-color: var(--color-bg);
 }
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 header ul {
@@ -35,20 +54,24 @@ h1 {
     font-size: 160px;
     font-weight: 700;
     margin: 0;
+    letter-spacing: -0.02em;
 }
 
 h2 {
     margin: 3px;
-    font-weight: 300;
+    font-weight: 500;
     text-align: center;
+    letter-spacing: -0.01em;
 }
 
 h3 {
     margin: 0;
+    font-weight: 500;
 }
 
 .subtitle {
     font-size: 50px;
+    color: var(--color-text-secondary);
 }
 
 section {
@@ -58,7 +81,8 @@ section {
 }
 
 .light-text {
-    font-weight: 100;
+    font-weight: 300;
+    color: var(--color-text-secondary);
 }
 
 .options {
@@ -67,11 +91,13 @@ section {
 
 .options a {
     margin: 40px 10px;
+    transition: all 0.3s ease;
 }
 
 a {
     text-decoration: none;
-    /* color: rgb(255,255,255); */
+    color: var(--color-text);
+    transition: all 0.3s ease;
 }
 
 /* .socials {
@@ -96,24 +122,27 @@ a {
 }
 
 .wave {
-    fill: rgb(0,0,0);
+    fill: var(--color-surface);
     width: 100vw;
-    height: 60vh;
+    height: 55vh;
     position: fixed;
     bottom: 0;
     left: 0;
 }
 
 .social svg {
-    fill: rgb(255,255,255);
+    fill: var(--color-text);
 }
 
 a:hover {
-    color:  rgb(84 205 47);
+    color: var(--color-accent);
+    transform: translateY(-2px);
 }
-footer h3:hover{
-    color: rgb(30 102 8);
+
+footer h3:hover {
+    color: var(--color-accent-hover);
 }
+
 /*work page*/
 
 .work-details {
@@ -122,6 +151,7 @@ footer h3:hover{
 
 .work-details td {
     padding: 30px;
+    color: var(--color-text-secondary);
 }
 
 @media only screen and (max-width: 600px) {
@@ -148,6 +178,7 @@ footer h3:hover{
     height: 200px;
     border-radius: 50%;
     margin: 40px 10px 10px 10px;
+    border: 2px solid var(--color-accent);
 }
 .sub-pages-footer {
     position: fixed;
@@ -157,6 +188,14 @@ footer h3:hover{
 @media only screen and (max-width: 600px) {
     .sub-pages-footer {
         position: relative;
+    }
+    
+    h1 {
+        font-size: 100px;
+    }
+    
+    .subtitle {
+        font-size: 30px;
     }
 }
 

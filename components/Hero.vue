@@ -1,6 +1,7 @@
 <template>
     <section class="hero-section bg-black-custom">
-        <h1 class="">Moris <span class="light-text">web</span> Dev</h1>
+        <div><h1 class="">Moris <span class="light-text">Web</span> Dev</h1></div>
+        
         <div class="socials">
             <!-- <div class="social">
                 <a href="" target="_blank">
@@ -33,7 +34,7 @@
         align-items: center;
     }
     h1 {
-        font-size: 160px;
+        font-size: 6em;
         font-weight: 700;
         margin: 0;
         color: white;

@@ -1,0 +1,61 @@
+/* Page transition styles */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+/* Layout transition */
+.layout-enter-active,
+.layout-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.layout-enter,
+.layout-leave-to {
+  opacity: 0;
+}
+
+/* Fade transition */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* Slide transition */
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.5s ease;
+}
+
+.slide-enter,
+.slide-leave-to {
+  transform: translateX(20px);
+}
+
+/* Footer transition */
+footer {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.page-enter footer,
+.page-leave-to footer {
+  opacity: 0;
+  transform: translate(-50%, 20px);
+}
+
+/* Ensure footer stays visible during transitions */
+.page-enter-active footer,
+.page-leave-active footer {
+  opacity: 1;
+  transform: translate(-50%, 0);
+} 
