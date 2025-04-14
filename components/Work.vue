@@ -12,7 +12,14 @@
             <span v-for="tag in job.tags" :key="tag" class="tag">{{ tag }}</span>
           </div>
           <a v-if="job.link" :href="job.link" target="_blank" class="work-link">
-            View Project
+            {{ job.company }}
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+       
+          <a v-if="job.link2" :href="job.link2" target="_blank" class="work-link">
+            Linea
             <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
@@ -34,7 +41,8 @@ export default {
           company: 'Consensys',
           description: 'Working on Web3 applications and blockchain development, specifaclly on Linea zkEVM Layer 2.',
           tags: ['DeFi', 'Web3', 'Blockchain', 'TypeScript'],
-          link: 'https://consensys.io'
+          link: 'https://consensys.io',
+          link2: 'https://linea.build/'
         },
         {
           period: '2022 - 2024',
@@ -50,7 +58,7 @@ export default {
           company: 'Groupe TRAVELFACTORY',
           description: 'Development of travel and leisure applications.',
           tags: ['Vue.js', 'Ajax', 'API', 'ES6', 'Agile'],
-          link: 'https://travelfactory.com'
+          link: 'https://www.compagniedesalpes.com/en/les-marques/travelfactory-en'
         },
         {
           period: '2018 - 2019',
@@ -66,7 +74,7 @@ export default {
           company: 'Wise Group Media Ltd',
           description: 'Development of responsive funnels and websites using Bootstrap 4 and PHP.',
           tags: ['PHP', 'JavaScript', 'Bootstrap', 'Responsive Design'],
-          link: 'https://www.clearex.co.il'
+          link: 'https://www.wisegroup.co.il/',
         },
         {
           period: '2017 - 2018',

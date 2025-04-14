@@ -28,8 +28,7 @@
     </footer>
 </template>
 
-<style scoped>
-/* Component-specific styles */
+<style>
 .footer-custom {
     display: flex;
     flex-direction: column;
@@ -38,7 +37,7 @@
     padding: 2rem 0;
     z-index: 10;
     margin-top: auto;
-    position: relative;
+    position: static;
     bottom: 0;
     left: 0;
     right: 0;
@@ -52,38 +51,6 @@
     padding: 1.5rem 0;
     list-style: none;
     margin: 0;
-}
-
-.options {
-    display: flex;
-    gap: 2rem;
-}
-
-.nav-link {
-    color: var(--color-text);
-    text-decoration: none;
-    position: relative;
-    padding: 0.5rem 0;
-    transition: all 0.3s ease;
-}
-
-.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--color-accent);
-    transition: width 0.3s ease;
-}
-
-.nav-link:hover {
-    color: var(--color-accent);
-}
-
-.nav-link:hover::after {
-    width: 100%;
 }
 
 .social-link {
@@ -110,10 +77,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .options {
-        gap: 1rem;
-    }
-    
     .social-links {
         gap: 1.5rem;
     }
@@ -129,3 +92,17 @@
     }
 }
 </style>
+
+<script>
+export default {
+  mounted() {
+    // Fix for footer positioning
+    const parent = this.$el.parentNode;
+    if (parent && parent.style) {
+      parent.style.display = 'flex';
+      parent.style.flexDirection = 'column';
+      parent.style.minHeight = '100vh';
+    }
+  }
+}
+</script>

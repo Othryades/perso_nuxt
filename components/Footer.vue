@@ -1,7 +1,7 @@
 <template>
     <footer class="footer-n">
         <div>
-            <h2 class="text-center text-2xl text-white">Web Developer and Defi</h2>
+            <h2 class="text-center text-2xl text-white">Web Developer, Ethereum and Defi</h2>
             <div class="options flex justify-center">                
                 <NuxtLink class="nav-link" to="/work" title="my work"><h3 class="font-semibold text-center">My Work</h3></NuxtLink>
                 <NuxtLink class="nav-link" to="/about" title="about me"><h3 class="font-semibold text-center">About Me</h3></NuxtLink>
